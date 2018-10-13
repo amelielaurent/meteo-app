@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+      <link rel="stylesheet" type="text/html" href="../src/assets/styles/weather-icons.min.css">
+      <link rel="icon" href="../src/assets/font/weathericons-regular-webfont.svg">
+    <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icon.min.css">-->
+    <title>meteo-js</title>
+
+  </head>
+  <body>
+    <!--<script>-->
+      <!--window.fetch('http://api.openweathermap.org/data/2.5/weather?q=London&lang=fr&units=metric&appid=3aa37ba63a95d651e996e51df3c8fa9c')-->
+          <!--.then(res => res.json())-->
+        <!--.then(resJSON => console.log(resJSON.main.temp))-->
+    <!--</script>-->
+    <div id="app">
+
+        <ul class="tabs">
+            <li class="active"><a href="#meteo">Météo</a></li>
+            <li><a href="#favoris">Mes favoris</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tab-content active" id="meteo">
+                <div class="container">
+                    <div class="heart-container">
+                    <div id="heart"></div></div>
+                  <h1>
+                      <span id="ville"></span>
+                      <span class="tooltip"> Tapez une autre ville</span>
+                  </h1>
+                  <h2 id="temperature"></h2>
+                  <p id="conditions"> </p>
+                    <i class="wi"></i>
+                </div>
+
+              <div class="icones"></div>
+            <div class="wrapper-max"></div>
+            <div class="wrapper-min"></div>
+            </div>
+
+
+            <div class="tab-content" id="favoris">
+                <div class="container_favoris">
+
+                        <i class="wi"></i>
+                    <div class="button">
+                        <button>Supprimer les favoris</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+
+</html>
